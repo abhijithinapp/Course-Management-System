@@ -17,5 +17,6 @@ export function confirmPassword(pass, cpass){
     else{
       return true;
     }
+
 }
 
