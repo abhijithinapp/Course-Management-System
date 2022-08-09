@@ -1,5 +1,5 @@
 import * as validator from '../Utils/validations.js'
- 
+
 console.log('hi')
 var submit = document.getElementById('submit')
 var inputs = Array.prototype.slice.call(document.querySelectorAll('.input'))
@@ -8,7 +8,7 @@ var emailAlert = document.getElementById('emailalert')
 var email = document.querySelector('input[name = "email"]')
 function validate(){
     inputs.forEach(input => { 
-    inputvalue = input.querySelector('input').value
+    var inputvalue = input.querySelector('input').value
     if( validator.findIfEmpty(inputvalue))
     {
     input.querySelector('p').innerHTML = "This field cannot be empty" 
@@ -18,9 +18,12 @@ function validate(){
     input.querySelector('p').style.display = "none"
     
   });
-    email = document.querySelector('input[name = "email"]').value
-    if(validator.isValidEmail(email))
-        emailAlert.innerHTML = "Please enter a valid email ID"
-        emailAlert.style.display = "block"
+    var email = document.querySelector('input[name = "email"]').value
+    console.log(email)
+    if(!validator.isValidEmail(email))
+        {emailAlert.innerHTML = "Please enter a valid email ID"
+        emailAlert.style.display = "block"}
+    else
+        emailAlert.style.display = "none"
   }
   submit.addEventListener('click',validate)
