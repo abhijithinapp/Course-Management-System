@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registration.css">
+    <script type="module" src = "registration.js"></script>
+    <title>KAPA Academy</title>
+</head>
+
+<body>
+<div id = "regUser">
+    <h2> Register User</h2>
+    <div id = "logo">
+        logo
+    </div>
+    <br>
+    <div id = "inputs">
+        <div class="input" >
+            <label for="name">Name</label>
+            <input type="text" name="name" id="nameid">
+            <p class="alert" id="namealert" ></p>
+        </div>
+        <div class="input" >
+            <label for="email">Email</label>
+            <input type="email" name="email" id="emailid">
+            <p class="alert" id="emailalert" ></p>
+        </div>
+        <div class="input">
+            <label for="pass">Password</label>
+            <input type="text" name="pass" id="passid">
+            <p class="alert" id="passalert" ></p>
+        </div>
+        <div class="input">
+            <label for="cpass">Confirm Password</label>
+            <input type="text" name="cpass" id="cpassid">
+            <p class="alert" id="cpassalert" ></p>
+        </div>
+        <button id="submit" type="button" value="Register" >Register</button>
+        <p class="alert" id="accountexistalert"></p>
+    </div>
+</div>    
+</body>
+
+</html>
