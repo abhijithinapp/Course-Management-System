@@ -1,68 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css"  media="screen,projection"/>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css"
+      media="screen,projection"
+    />
     <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script>user_dashboard_js.js</script>
-    <link rel="stylesheet" href="user_dashboard.css">
+    <link rel="stylesheet" href="user_dashboard.css" />
     <title>Header Template</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navbar goes here -->
-    <div class="navbar-fixed">
-        <nav class="navbar-color black">
-            
-            <div class="nav-wrapper" class="card-panel black">
-                
-              <!--<a href="#" class="brand-logo">Logo</a>-->
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li>Log</li>
-                    <li><a class="dropdown-trigger" href="#" data-target="dropdown1"></li>
-                    <!--<ul class="collection-item avatar">
-                            <a class="dropdown-trigger" href="#" data-target="dropdown1">
-                            <img class="circle" src="purpleimg.jfif"></a>
-                            <span class="title">Login</span>-->
-                            <!--<ul id="dropdown1" class="dropdown-content">
-                                <li><a href="#">Profile</a></li>
-                                <li><a href="#">Log out</a></li>
-                            </ul>
-                        </li>
-                    </ul>-->
-                </ul>
-            </div>
-        </nav>
-    </div>
+
+    <nav>
+      <ul id="dropdown1" class="dropdown-content right">
+        <li><a href="#!">one</a></li>
+        <li><a href="#!">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">three</a></li>
+      </ul>
+      <div class="#2979ff blue accent-3">
+        <div class="nav-wrapper">
+          <!-- <a href="#" class="brand-logo center">Logo</a> -->
+          <ul id="nav-mobile" class="right">
+            <li>
+              <a class="dropdown-trigger" href="#!" data-target="dropdown1"
+                >Abhijith<i class="material-icons right">more_vert</i></a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-content center">
+          <span class="nav-title">Title</span>
+        </div>
+      </div>
+    </nav>
+
     <!-- Page Layout here -->
     <div class="row">
-        <div class="col s12 m4 l2"> 
-            <ul id="slide-out" class="sidenav sidenav-fixed">
-                <div id="navimenu" style="background-color:#50be46">
-                    <ul>
-                        <li class="box">
-                        <a href="#">Courses</a>
-                        </li>
-                        <li class="box"><a href="#">Enroll for course</a></li>
-                        <li class="box"><a href="#">Enquiries</a></li>
-                    </ul>
-                </div>
+      <div class="col s10 m4 l2 hide-on-med-and-down">
+        <ul
+          id="slide-out"
+          class="sidenav sidenav-fixed #263238 blue-grey darken-4 white-text text-darken-2"
+        >
+          <div id="navimenu" class="nav-wrapper">
+            <ul>
+              <li class=""><a class="white-text" href="#">Courses</a></li>
+              <li class="active">
+                <a class="#2979ff blue-text accent-3" href="#"
+                  >Enroll for course</a
+                >
+              </li>
+              <li class=""><a class="white-text" href="#">Enquiries</a></li>
             </ul>
-            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        </div>
-
-  
-        <div class="col s12 m8 l9"> <!-- Note that "m8 l9" was added -->
-          <!-- card content-->
-  
-        </div>
-  
+          </div>
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
       </div>
-</body>
+
+      <div class="col s2 m8 l10">
+        <!-- Note that "m8 l9" was added -->
+        <!-- card content-->
+      </div>
+    </div>
+
+    <script src="user_dashboard_js.js"></script>
+  </body>
 </html>
