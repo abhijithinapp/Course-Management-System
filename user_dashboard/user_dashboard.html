@@ -1,48 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-    <link rel="stylesheet" href="user_dashboard.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css"
+      media="screen,projection"
+    />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="user_dashboard.css" />
     <title>Header Template</title>
-</head>
-<body>
-    <!--top nav bar-->
-    <div class="navbar">
-        <div class="dropdown" >
-            <ul>
-                <li class="dropdown">
-                  <a href="javascript:void(0)" class="dropbtn">Kripa</a>
-                  <div class="dropdown-content">
-                    <a href="#">My Profile</a>
-                    <a href="#">Logout</a>
-                  </div>
-                  <a href=""><i class='fas fa-user-alt' style='font-size:48px;color:red'></i></a>
-                </li>
-              </ul>
-        </div>
-    </div>
-    <!--side nav bar-->
-    <div id="navimenu" style="background-color:#50be46">
-        <ul>
-            <li class="box">
-            <a href="#">Courses</a>
+  </head>
+  <body>
+    <!-- Navbar goes here -->
+
+    <nav>
+      <ul id="dropdown1" class="dropdown-content right">
+        <li><a href="#!">one</a></li>
+        <li><a href="#!">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">three</a></li>
+      </ul>
+      <div class="#2979ff blue accent-3">
+        <div class="nav-wrapper">
+          <!-- <a href="#" class="brand-logo center">Logo</a> -->
+          <ul id="nav-mobile" class="right">
+            <li>
+              <a class="dropdown-trigger" href="#!" data-target="dropdown1"
+                >Abhijith<i class="material-icons right">more_vert</i></a
+              >
             </li>
-            <li class="box1"><a href="#">Enroll for course</a></li>
-            <li class="box"><a href="#">Enquiries</a></li>
-        </ul>
-    </div>
-    <!--card
-    <div class="card">
-        <div class="row">
-            <div class="column">
-            <h2>Course Name</h2>
-            <p>Course details</p>
-            </div>
+          </ul>
         </div>
-    </div> -->
-</body>
+
+        <div class="nav-content center">
+          <span class="nav-title">Title</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Layout here -->
+    <div class="row">
+      <div class="col s10 m4 l2 hide-on-med-and-down">
+        <ul
+          id="slide-out"
+          class="sidenav sidenav-fixed #263238 blue-grey darken-4 white-text text-darken-2"
+        >
+          <div id="navimenu" class="nav-wrapper">
+            <ul>
+              <li class=""><a class="white-text" href="#">Courses</a></li>
+              <li class="active">
+                <a class="#2979ff blue-text accent-3" href="#"
+                  >Enroll for course</a
+                >
+              </li>
+              <li class=""><a class="white-text" href="#">Enquiries</a></li>
+            </ul>
+          </div>
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+      </div>
+
+      <div class="col s2 m8 l10">
+        <!-- Note that "m8 l9" was added -->
+        <!-- card content-->
+      </div>
+    </div>
+
+    <script src="user_dashboard_js.js"></script>
+  </body>
 </html>
