@@ -1,3 +1,4 @@
+
 .card{
     width: auto;
 }
@@ -12,4 +13,5 @@
     text-transform: uppercase;
     vertical-align: middle;
     -webkit-tap-highlight-color: transparent;
+
 }
