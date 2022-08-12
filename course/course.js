@@ -9,3 +9,9 @@
     // Show thank you message element
     document.getElementById('thank_you').style.display = 'block';
   });
+
+
+  //user_dashboard
+  $(document).ready(function() {
+    $(".dropdown-trigger").dropdown();
+});

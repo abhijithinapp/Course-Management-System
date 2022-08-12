@@ -5,17 +5,70 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css"  media="screen,projection"/>
-
+    <link rel="stylesheet" href="user_dashboard.css" />
+    <link rel="stylesheet" href="courses.css" />
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
 
   <body>
+      <!-- Navbar goes here -->
+      <nav>
+        <ul id="dropdown1" class="dropdown-content right">
+          <li><a href="#!">one</a></li>
+          <li><a href="#!">two</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">three</a></li>
+        </ul>
+        <div class="#2979ff blue accent-3">
+          <div class="nav-wrapper">
+            <!-- <a href="#" class="brand-logo center">Logo</a> -->
+            <ul id="nav-mobile" class="right">
+              <li>
+                <a class="dropdown-trigger" href="#!" data-target="dropdown1"
+                  >Ajmi<i class="material-icons right">more_vert</i></a
+                >
+              </li>
+            </ul>
+          </div>
+  
+          <div class="nav-content center">
+            <span class="nav-title">Courses</span>
+          </div>
+        </div>
+      </nav>
+    
+    <!-- Page Layout here -->
+    <div class="row">
+      <div class="col s10 m4 l2 hide-on-med-and-down">
+        <ul
+          id="slide-out"
+          class="sidenav sidenav-fixed #263238 blue-grey darken-4 white-text text-darken-2"
+        >
+          <div id="navimenu" class="nav-wrapper">
+            <ul>
+              <li class=""><a class="white-text" href="#">Courses</a></li>
+              <li class="active">
+                <a class="#2979ff blue-text accent-3" href="#"
+                  >Enroll for course</a
+                >
+              </li>
+              <li class=""><a class="white-text" href="#">Enquiries</a></li>
+            </ul>
+          </div>
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+      </div>
 
-
+      <div class="col s2 m8 l10"> 
+        <!-- Note that "m8 l9" was added -->
+        <!-- card content-->
+    <!--card goes here-->
     <div class="row">
         <div class="col s12 m6 l4 ">    
-        <div class="card  ">
+        <div class="card ">
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="office.jpg" style="width: 200px; height: 200px;">
             </div>
@@ -44,13 +97,11 @@
                 <div id="my_form">
                   <span class="card-title grey-text text-darken-4"><button class="btn waves-effect waves-light" type="submit" name="action" id="nextStep">Submit</button></span>
                 </div>
-              </div>
-             
-              
+              </div>      
             </div>    
           </div>
         </div> 
-        <!--End a card column-->
+        <!--End 1st card column-->
 
         <div class="col s12 m6 l4">    
           <div class="card  ">
@@ -78,7 +129,7 @@
               </div>    
             </div>
           </div> 
-          <!--End a card column-->
+          <!--End 2nd card column-->
           <div class="col s12 m6 l4">    
             <div class="card  ">
                 <div class="card-image waves-effect waves-block waves-light">
@@ -104,7 +155,7 @@
                 </div>    
               </div>
             </div> 
-            <!--End a card column-->
+            <!--End 3rd card column-->
             <div class="col s12 m6 l4">    
               <div class="card  ">
                   <div class="card-image waves-effect waves-block waves-light">
@@ -131,10 +182,12 @@
                   </div>    
                 </div>
               </div> 
-              <!--End a card column-->
+              <!--End 4th card column-->
 
-        </div>
+        </div><!--card row-->
       </div>
+    </div><!--page layout div-->
+
     <!--JavaScript at end of body for optimized loading-->
     <script src="course.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
