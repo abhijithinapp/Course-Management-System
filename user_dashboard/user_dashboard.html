@@ -26,27 +26,45 @@
     <!-- Navbar goes here -->
 
     <nav>
-      <ul id="dropdown1" class="dropdown-content right">
-        <li><a href="#!">one</a></li>
-        <li><a href="#!">two</a></li>
-        <li class="divider"></li>
-        <li><a href="#!">three</a></li>
-      </ul>
-      <div class="#2979ff blue accent-3">
-        <div class="nav-wrapper">
-          <!-- <a href="#" class="brand-logo center">Logo</a> -->
-          <ul id="nav-mobile" class="right">
-            <li>
-              <a class="dropdown-trigger" href="#!" data-target="dropdown1"
-                >Abhijith<i class="material-icons right">more_vert</i></a
-              >
-            </li>
-          </ul>
-        </div>
+      <ul id="slide-out" class="sidenav">
+        <li>
+          <div class="user-view">
+            <div class="background"></div>
 
-        <div class="nav-content center">
-          <span class="nav-title">Title</span>
-        </div>
+            <a href="#name"><span class="white-text name">John Doe</span></a>
+            <a href="#email"
+              ><span class="white-text email">jdandturk@gmail.com</span></a
+            >
+          </div>
+        </li>
+        <li>
+          <a href="#!"
+            ><i class="material-icons">cloud</i>First Link With Icon</a
+          >
+        </li>
+        <li><a href="#!">Second Link</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Subheader</a></li>
+        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+      </ul>
+      <a href="#" data-target="slide-out" class="sidenav-trigger"
+        ><i class="material-icons">menu</i></a
+      >
+
+      <ul id="dropdown1" class="dropdown-content right">
+        <li><a href="#!">My Profile</a></li>
+        <li><a href="#!">Logout</a></li>
+      </ul>
+
+      <div class="nav-wrapper #2196f3 blue">
+        <a href="#" class="brand-logo center">Logo</a>
+        <ul id="nav-mobile" class="right">
+          <li>
+            <a class="dropdown-trigger" href="#!" data-target="dropdown1"
+              >Abhijith<i class="material-icons right">more_vert</i></a
+            >
+          </li>
+        </ul>
       </div>
     </nav>
 
@@ -58,15 +76,13 @@
           class="sidenav sidenav-fixed #263238 blue-grey darken-4 white-text text-darken-2"
         >
           <div id="navimenu" class="nav-wrapper">
-            <ul>
-              <li class=""><a class="white-text" href="#">Courses</a></li>
-              <li class="active">
-                <a class="#2979ff blue-text accent-3" href="#"
-                  >Enroll for course</a
-                >
-              </li>
-              <li class=""><a class="white-text" href="#">Enquiries</a></li>
-            </ul>
+            <li class=""><a class="white-text" href="#">Courses</a></li>
+            <li class="active">
+              <a class="#2979ff blue-text accent-3" href="#"
+                >Enroll for course</a
+              >
+            </li>
+            <li class=""><a class="white-text" href="#">Enquiries</a></li>
           </div>
         </ul>
         <a href="#" data-target="slide-out" class="sidenav-trigger"
@@ -79,7 +95,8 @@
         <!-- card content-->
       </div>
     </div>
-
-    <script src="user_dashboard_js.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="user_dashboard_js.js"></script>
   </body>
 </html>
