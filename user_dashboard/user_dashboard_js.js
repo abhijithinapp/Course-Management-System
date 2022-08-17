@@ -1,6 +1,4 @@
-var dropdowns = document.querySelectorAll('.dropdown-trigger')
-for (var i = 0; i < dropdowns.length; i++){
-   var instance = M.Dropdown.init(dropdowns[i], {coverTrigger:false});
-}
-var instance = M.Dropdown.getInstance(elem);
-instance.open()
+document.addEventListener('DOMContentLoaded',function(){
+   var side = document.querySelector('.sidenav');
+   instance = M.Sidenav.init(side)
+})
