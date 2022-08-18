@@ -1,46 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css" media="screen,projection" />
     <link rel="stylesheet" href="registration.css">
-    <script type="module" src = "registration.js"></script>
-    <title>KAPA Academy</title>
+    
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="user_dashboard.css" />
+    <title>Header Template</title>
 </head>
 
 <body>
-<div id = "regUser">
-    <h2> Register User</h2>
-    <div id = "logo">
-        logo
+    <div class="section center ">
+        <main>
+
+            <img class="responsive-img" style="width: 250px;" src="../images/nova_academy.webp" />
+            <div class="section">
+
+            <h5 class="blue-text">Register for a new account</h5>
+            
+
+            <div class="container">
+                <div class="z-depth-1 grey lighten-4 row"
+                    style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
+
+                    <div class='row'>
+                        <div class='col s12'>
+                        </div>
+                    </div>
+
+                    <div class='row'>
+                        <div class="input input-field col s12">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="nameid">
+                            <p class="alert" id="namealert"></p>
+                        </div>
+
+                        <div class="input input-field col s12">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="emailid">
+                            <p class="alert" id="emailalert"></p>
+                        </div>
+
+                    </div>
+
+                    <div class='row'>
+
+                        <div class="input input-field col s12">
+                        <label for="pass">Password</label>
+                        <input type="text" name="pass" id="passid">
+                        <p class="alert" id="passalert"></p>
+                        </div>
+
+                        <div class='row'>
+                        
+                            <div class="input input-field col s12">
+                            <label for="cpass">Confirm Password</label>
+                            <input type="text" name="cpass" id="cpassid">
+                            <p class="alert" id="cpassalert"></p>
+                            </div>
+
+                        <label style='float: right;'>
+                            <a class='pink-text' href='#!'><b>Forgot Password?</b></a>
+                        </label>
+                    </div>
+
+                    <br />
+
+                    <div class='row'>
+                        <button name='btn_login' id="submit"
+                            class='col s12 btn btn-large waves-effect blue'>Register</button>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+            Already Registered? <a href="../login/login.html">Login Here</a>
+
     </div>
-    <br>
-    <div id = "inputs">
-        <div class="input" >
-            <label for="name">Name</label>
-            <input type="text" name="name" id="nameid">
-            <p class="alert" id="namealert" ></p>
-        </div>
-        <div class="input" >
-            <label for="email">Email</label>
-            <input type="email" name="email" id="emailid">
-            <p class="alert" id="emailalert" ></p>
-        </div>
-        <div class="input">
-            <label for="pass">Password</label>
-            <input type="text" name="pass" id="passid">
-            <p class="alert" id="passalert" ></p>
-        </div>
-        <div class="input">
-            <label for="cpass">Confirm Password</label>
-            <input type="text" name="cpass" id="cpassid">
-            <p class="alert" id="cpassalert" ></p>
-        </div>
-        <button id="submit" type="button" value="Register" >Register</button>
-        <p class="alert" id="accountexistalert"></p>
-    </div>
-</div>    
-</body>
+
+    </main>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+<script type="module" src="registration.js"></script>
+    </body>
+
+</html>
 
 </html>
