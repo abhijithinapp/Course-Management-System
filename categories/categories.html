@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css"
+      media="screen,projection"
+    />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="categories.css" />
+    <title>Header Template</title>
+  </head>
+  <body>
+    <!-- Navbar goes here -->
+
+    <nav>
+      <!-- Sidebar -->
+      <ul
+        id="slide-out"
+        class="sidenav #263238 blue-grey darken-4 white-text text-darken-2"
+      >
+        <!-- User view sections -->
+
+        <div class="user-view flow-text">
+          <a href="#" class="sidenav-close"
+            ><i class="material-icons">close</i></a
+          >
+          <div class="content center-align">
+            <img src="../images/placeholder.webp" class="circle" width="30px" />
+            Abhijith
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <li class=""><a class="white-text" href="#">Courses</a></li>
+        <li class="active">
+          <a class="#2979ff blue-text accent-3" href="#">Enroll for course</a>
+        </li>
+        <li class=""><a class="white-text" href="#">Enquiries</a></li>
+      </ul>
+
+      <!-- Sidebar trigger -->
+      <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"
+        ><i class="material-icons">menu</i></a
+      >
+
+      <div class="nav-wrapper #2196f3 blue">
+        <a href="#" class="brand-logo center responsive-img"
+          ><img src="../images/nova_academy.webp" height="60px"
+        /></a>
+        <ul id="nav-mobile" class="right flow-text">
+          <li>
+            <a class="flow-text" href="#!" data-target="dropdown1">Profile</a>
+          </li>
+          <li><a href="#!" class="flow-text">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="row">
+        <div class="nav-wrapper">
+            <form>
+              <div class="input-field">
+                <input id="search" placeholder="Search for a category using category name or category code" type="search" required>
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+              </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col s10 m4 l2 hide-on-med-and-down">
+        <ul id="slide-out" class="sidenav section sidenav-fixed #263238 blue-grey darken-4 white-text text-darken-2">
+          <div class="content center-align flow-text">
+                <img
+              src="../images/placeholder.webp"
+              class="circle responsive-img"
+              width="100px"/>
+              <br />
+                Abhijith
+          </div>
+          <div id="navimenu" class="section nav-wrapper">
+                <li class=""><a class="white-text" href="#">Courses</a></li>
+                <li class="active">
+              <a class="#2979ff blue-text accent-3" href="#"
+                >Enroll for course</a>
+                </li>
+                <li class=""><a class="white-text" href="#">Enquiries</a></li>
+            </div>
+        </ul>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      </div>
+
+       <div class="col s2 m8 l10" id="maincontent">
+            <!-- Note that "m8 l9" was added -->
+            <!-- card content-->
+            <h3>Course categories</h3>
+            <br>
+            <a class='dropdown-trigger btn light-blue darken-2' href='#' data-target='dropdown1'>Categories</a>
+
+            <!-- Dropdown Structure -->
+            <ul id='dropdown1' class='dropdown-content'>
+                <li><a href="#!" style="color:#0288d1">Computer Science</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="#!" style="color:#0288d1">Data Science</a></li>
+                <li class="divider" tabindex="-1"></li>
+                <li><a href="#!" style="color:#0288d1">Artificial Intelligence</a></li>
+            </ul>
+        </div>
+    
+        <!--search for course-->
+        
+    </div>
+    <!--category operations-->
+    <div class="row">
+        <ul class="collapsible">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">add</i>Add a category</div>
+              <div class="collapsible-body"><span>Enter the new category.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">update</i>Update a category</div>
+              <div class="collapsible-body"><span>Enter the category to be updated.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">check</i>Enable a category</div>
+              <div class="collapsible-body"><span>Enter the category to be enabled.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">error_outline</i>Disable a category</div>
+                <div class="collapsible-body"><span>Enter the category to be disabled.</span></div>
+            </li>
+        </ul>
+    </div>
+    <!-- Page Layout here -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="categories.js"></script>
+  </body>
+</html>
